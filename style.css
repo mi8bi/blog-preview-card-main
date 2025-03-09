@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Figtree Extra Bold";
+    src: url("./assets/fonts/static/Figtree-ExtraBold.ttf");
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+@font-face {
+    font-family: "Figtree Medium 16px";
+    src: url("./assets/fonts/static/Figtree-Medium.ttf");
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+@font-face {
+    font-family: "Figtree Medium 14px";
+    src: url("./assets/fonts/static/Figtree-Medium.ttf");
+    line-height: 150%;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+@font-face {
+    font-family: "Figtree Extra Bold 14px";
+    src: url("./assets/fonts/static/Figtree-ExtraBold.ttf");
+    line-height: 150%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #F4D04E;
+}
+
+.attribution {
+    margin-top: 24px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    row-gap: 24px;
+    width: 384px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: #111 1px solid;
+    box-shadow: 12px 12px 0px rgb(17, 17, 17);
+    box-sizing: border-box;
+}
+
+.card > img {
+    border-radius: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.tag {
+    font-family: "Figtree Extra Bold 14px";
+    background-color: #F4D04E;
+    align-self: flex-start;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #111;
+}
+
+.date {
+    font-family: "Figtree Medium 14px";
+    color: #111;
+}
+
+.title {
+    font-family: "Figtree Extra Bold";
+    color: #111;
+    font-size: 24px;
+}
+
+.desc {
+    font-family: "Figtree Medium 16px";
+    color: #6b6b6b;
+}
+
+.author {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+}
+
+.author img {
+    width: 32px;
+    height: 32px;
+}
+
+.author-name {
+    font-family: "Figtree Extra Bold 14px";
+    color: #111;
+}
+
+@media screen and (max-width: 560px) {
+
+    .tag {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 327px;
+    }
+
+    .date {
+        font-family: "Figtree Medium 14px";
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .desc {
+        font-size: 14px;
+    }
+
+}
